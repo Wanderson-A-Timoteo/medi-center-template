@@ -147,6 +147,8 @@ nav .active a, nav a:hover {
   border-bottom: 2px solid #ffffff11;
 }
 
+/* Conteúdo  de article LATEST NEWS  E DEPARTAMENTS*/
+
 #geral {
   display: flex;
   justify-content: center;
@@ -159,6 +161,8 @@ nav .active a, nav a:hover {
 #geral aside {
   flex: 1;
 }
+
+/* Conteúdo  de article DEPARTAMENTS */
 
 .widget_title {
   margin-top: 30px;
@@ -206,4 +210,64 @@ nav .active a, nav a:hover {
   margin-top: 20px;
   border-top: 2px solid  #1414141f;
 }
+
+/* Conteúdo  de article LATEST NEWS */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+article a {
+  text-decoration: none;
+}
+
+article .news_data {
+  display: flex;
+}
+
+article .news_posted_at {
+  background-color: #2B4C99;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 10px;
+  margin-right: 2px;
+}
+
+article .news_comments {
+  background-color: #39AAE1;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 10px;
+}
+
+article .news_thumbnail {
+  margin-top: 30px;
+}
+
+article .news_thumbnail img{
+  width: 100%;
+  height: auto;
+}
+
+article .news_title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  color: #000000;
+}
+
+article .news_resume {
+  color: #5C5C5C;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
 
