@@ -5,16 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript">
+    window.onload = function() {
+      document.querySelector(".menuMobile").addEventListener("click", function(){
+        if (document.querySelector(".menu nav ul").style.display == "flex") {
+          document.querySelector(".menu nav ul").style.display = "nome";
+        } else {
+          document.querySelector(".menu nav ul").style.display = "flex";
+        }
+      });
+    };
+  </script>
   <title>Medicenter | Template</title>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="logo">
-        <a href=""> <img src="assets/images/logo.png" alt="Logomarca Medi Center"> </a>
+        <a href=""> <img src="assets/images/logo.png" alt="Logomarca Medicenter"> </a>
       </div>
       <div class="menu">
         <nav>
+          <div class="menumobile">
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+          </div>
           <ul>
             <li class="active"> <a href="">Home</a> </li>
             <li> <a href="">Blog</a> </li>
@@ -363,7 +379,6 @@
           </div>
         </div>
       </div>
-
       <div class="footer_copy">
         <span>  &copy; Copyright - </span> Todos os direitos reservados <span> by </span> Wanderson de Almeida Timóteo
       </div>
